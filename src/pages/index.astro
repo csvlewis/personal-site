@@ -1,11 +1,87 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import headshot from '../assets/headshot.jpg';
+import vacation from '../assets/vacation.jpg';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<div id="container">
+	<main>
+		<img src={headshot.src} style={{ borderRadius: "50%" }}  width="300" height="300" alt="headshot"  />
+		<h2> Hello! I'm Chris Lewis. </h1>
+		<hr>
+		<p> I'm a former writer turned software engineer currently based in Denver, Colorado. </p>
+		<p> I have 5+ years of experience building full-stack web applications using a variety of technologies, including React, Node.js, and PostgreSQL. </p>
+		<p> I love traveling and anything related to pop culture (movies, tv, video games, books, etc.)  </p>
+		<figure>
+			<img src={vacation.src} style={{ borderRadius: "10px" }} width="300" height="400"  alt="vacation" />
+			<figcaption>Me scuba diving in the Philippines</figcaption>
+		</figure>
+		<p> You can check out my personal projects on my <a href="https://github.com/csvlewis">GitHub page</a> </p>
+		<p> see my work history and reach out on <a href="https://www.linkedin.com/in/csvlewis/">LinkedIn</a> </p>
+		<p> or email me directly at <a href="mailto:csvlewis@gmail.com">csvlewis@gmail.com</a> </p>
+	</main>
+</div>
+
+<style>
+	html {
+		background-color: #2C2C2C
+	}
+	#container {
+		font-family: 'Helvetica';
+		height: 100%;
+	}
+
+	hr {
+		border: 0;
+		width: 75%;               
+		background-color:#E4E4E4;
+		height: 1px;
+	}
+
+	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 16px;
+		gap: 16px;
+	}
+
+	h2 {
+		color: #E4E4E4;
+		margin: 0;
+	}
+
+	p {
+		font-size: 20px;
+		margin: 0;
+		color: #E4E4E4;
+		max-width: 800px;
+		text-align: center;
+		line-height: 24px;
+	}
+
+	figcaption {
+		font-size: 16px;
+		color: #E4E4E4;
+		text-align: center;
+	}
+
+	a {
+		color: #E4E4E4;
+		background-color: transparent;
+		border-bottom: 2px dashed #E4E4E4;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #1E90FF;
+		background-color: transparent;
+		border-bottom: 2px solid #1E90FF;
+		text-decoration: none;
+	}
+	/* a:visited {
+		color: #E4E4E4;
+		background-color: transparent;
+		/* text-decoration: none; */
+	} */
+</style>
