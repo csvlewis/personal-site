@@ -28,9 +28,36 @@ This project is a simple website built with [Astro][Astro-url] and hosted with [
 
 <img src="src/assets/screenshot.png" width="725" height="500">
 
-The static website is comprised of mostly text, pictures, and links. I purchased and configured the https://csvlewis.com web domain using [Porkbun][Porkbun-url]. I also configured email hosting/forwarding with Porkbun to enable a personal email address at chris@csvlewis.com.
+The static website is comprised of mostly text, pictures, and links. I purchased and configured the https://csvlewis.com web domain using [Porkbun][Porkbun-url]. I configured email hosting/forwarding with Porkbun to enable a personal email address at chris@csvlewis.com.
+
+I also added a route at https://csvlewis.com/resume where you can view and download my current resume. Simply visit the URL to see the PDF file displayed in the browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Running Locally
+
+To run this Astro project locally, follow these steps:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/csvlewis/personal-site.git
+cd personal-site
+```
+
+2. **Install dependencies**
+   Make sure you have Node.js installed. Then, install the project dependencies:
+
+```bash
+npm install
+```
+
+3. **Install dependencies**
+   Launch the Astro dev server and open the site in your browser at http://localhost:4321/:
+
+```bash
+npm run dev
+```
 
 ### Built With
 
